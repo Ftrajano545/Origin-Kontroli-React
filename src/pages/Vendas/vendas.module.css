@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    /* width: 1200px; */
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+
+    
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .vendas {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border: black 2px none;
+        width: 500px;
+        height: 250px;
+        border-radius: 10px;
+
+        .search {
+            border: none;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+
+            background-color: #111827;
+            color: aliceblue;
+
+            .buscar {
+                margin-left: 10px;
+            }
+
+
+        }
+
+        .caixa {
+            display: grid;
+            align-items: center;
+            justify-content: sp;
+            gap: 50px;
+            margin: 15px;
+            margin-top: 2rem;
+
+            input {
+                border: solid #cbbfbf;
+                border-radius: 10px;
+                height: 2rem;
+                width: 25rem;
+            }
+
+            .representante {
+                display: grid;
+
+            }
+        }
+    }
+
+    .car {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        border: black 2px none;
+        width: 500px;
+        height: 250px;
+        border-radius: 10px;
+
+        .compra {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: none;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            background-color: #111827;
+            color: aliceblue;
+
+            .carrinho {
+                margin-left: 10px;
+
+
+            }
+
+            .limpar {
+                background-color: #cbbfbf;
+                margin-right: 10px;
+                height: 40px;
+            }
+
+            .escrita {
+                color: aqua;
+                display: flex;
+                align-items: center;
+                justify-items: center;
+            }
+
+        }
+
+
+
+    }
+}
