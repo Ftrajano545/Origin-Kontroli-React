@@ -1,4 +1,7 @@
+import { Router } from "react-router-dom"
 import Styles from "./home.module.css"
+import login from "../Login/Login"
+import { Link } from "react-router-dom"
 
 export default function Home() {
     return (
@@ -21,389 +24,389 @@ export default function Home() {
                         </nav>
 
                         <div className={Styles.navButtons}>
-                            <a href="#" className={`${Styles.btn} ${Styles.btnOutline}`}>Quero testar</a>
-                            <a href="/pages/login/login.html" className={`${Styles.btn} ${Styles.btnPrimary}`}>Login</a>
+                            <Link className={`${Styles.btn} ${Styles.btnOutline}`} to={""}>Quero testar</Link>
+                            <Link className={`${Styles.btn} ${Styles.btnPrimary}`} to={"/login"}>Login</Link>
                         </div>
                     </div>
                 </div>
             </header>
 
-            
-                <section className={Styles.firstSection}>
-                    <div className={Styles.container}>
-                        <div className={Styles.firstSectionGrid}>
-                            <div className={Styles.firstSectionContent}>
-                                <div className={Styles.firstSectionBadge}>
-                                    🚀 Controle de estoque inteligente
-                                </div>
-                                <h1 className={Styles.firstSectionTitle}>
-                                    Elimine a <span className={Styles.firstSectionGradientText}>falta de controle</span> do seu estoque
-                                </h1>
-                                <p className={Styles.firstSectionDescription}>
-                                    Automatize seu controle de estoque, evite perdas inesperadas e otimize
-                                    suas vendas com nossa solução inteligente para pequenas e médias empresas.
-                                </p>
-                                <div className={Styles.firstSectionButtons}>
-                                    <a href="#" className={`${Styles.btn} ${Styles.btnPrimary} ${Styles.btnLg}`}>
-                                        Começar gratuitamente
-                                    </a>
-                                    <a href="#" className={` ${Styles.btn} ${Styles.btnOutline} ${Styles.btnLg}`}>
-                                        Ver demonstração
-                                    </a>
-                                </div>
-                                <div className={Styles.firstSectionFeatures}>
-                                    ✨ Teste grátis por 30 dias • Sem compromisso • Suporte incluído
-                                </div>
+
+            <section className={Styles.firstSection}>
+                <div className={Styles.container}>
+                    <div className={Styles.firstSectionGrid}>
+                        <div className={Styles.firstSectionContent}>
+                            <div className={Styles.firstSectionBadge}>
+                                🚀 Controle de estoque inteligente
                             </div>
-                            <div className={Styles.firstSectionImage}>
-                                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&h=600"
-                                    alt="Imagem de Estoque" />
-                                <div className={Styles.firstSectionStats}>
-                                    <div>
-                                        <div className={Styles.firstSectionStatValue}>98%</div>
-                                        <div className={Styles.firstSectionStatLabel}>Precisão</div>
-                                    </div>
-                                    <div>
-                                        <div className={Styles.firstSectionStatValue}>-75%</div>
-                                        <div className={Styles.firstSectionStatVabel}>Perdas</div>
-                                    </div>
-                                    <div>
-                                        <div className={Styles.firstSectionStatValue}>+45%</div>
-                                        <div className={Styles.firstSectionStatLabel}>Eficiência</div>
-                                    </div>
+                            <h1 className={Styles.firstSectionTitle}>
+                                Elimine a <span className={Styles.firstSectionGradientText}>falta de controle</span> do seu estoque
+                            </h1>
+                            <p className={Styles.firstSectionDescription}>
+                                Automatize seu controle de estoque, evite perdas inesperadas e otimize
+                                suas vendas com nossa solução inteligente para pequenas e médias empresas.
+                            </p>
+                            <div className={Styles.firstSectionButtons}>
+                                <a href="#" className={`${Styles.btn} ${Styles.btnPrimary} ${Styles.btnLg}`}>
+                                    Começar gratuitamente
+                                </a>
+                                <a href="#" className={` ${Styles.btn} ${Styles.btnOutline} ${Styles.btnLg}`}>
+                                    Ver demonstração
+                                </a>
+                            </div>
+                            <div className={Styles.firstSectionFeatures}>
+                                ✨ Teste grátis por 30 dias • Sem compromisso • Suporte incluído
+                            </div>
+                        </div>
+                        <div className={Styles.firstSectionImage}>
+                            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&h=600"
+                                alt="Imagem de Estoque" />
+                            <div className={Styles.firstSectionStats}>
+                                <div>
+                                    <div className={Styles.firstSectionStatValue}>98%</div>
+                                    <div className={Styles.firstSectionStatLabel}>Precisão</div>
+                                </div>
+                                <div>
+                                    <div className={Styles.firstSectionStatValue}>-75%</div>
+                                    <div className={Styles.firstSectionStatVabel}>Perdas</div>
+                                </div>
+                                <div>
+                                    <div className={Styles.firstSectionStatValue}>+45%</div>
+                                    <div className={Styles.firstSectionStatLabel}>Eficiência</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <section className={Styles.problemSection}>
-                    <div className={Styles.container}>
-                        <div className={Styles.sectionHeader}>
-                            <h2 className={Styles.sectionTitle}>O desafio das pequenas empresas</h2>
-                            <p className={Styles.sectionDescription}>
-                                Pequenos negócios sofrem com falta de controle de estoque,
-                                perdas inesperadas e retrabalho no dia a dia.
-                            </p>
-                        </div>
-
-                        <div className={Styles.problemGrid}>
-                            <div className={Styles.problemCards}>
-                                <div className={`${Styles.card} ${Styles.problemCard}`}>
-                                    <div className={Styles.cardContent}>
-                                        <div className={`${Styles.cardIcon} ${Styles.problemIcon}`}>
-                                            <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z">
-                                                </path>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 className={Styles.cardTitle}>Produtos em falta</h3>
-                                            <p className={Styles.cardText}>Perdas de vendas por não ter o produto na hora certa</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className={`${Styles.card} ${Styles.problemCard}`}>
-                                    <div className={Styles.cardContent}>
-                                        <div className={`${Styles.cardIcon} ${Styles.problemIcon}`}>
-                                            <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 className={Styles.cardTitle}>Desperdício de capital</h3>
-                                            <p className={Styles.cardText}>Estoque parado ou produtos com validade vencida</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className={`${Styles.card} ${Styles.problemCard}`}>
-                                    <div className={Styles.cardContent}>
-                                        <div className={`${Styles.cardIcon} ${Styles.problemIcon}`}>
-                                            <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <h3 className={Styles.cardTitle}>Tempo perdido</h3>
-                                            <p className={Styles.cardText}>Horas gastas em controles manuais e planilhas</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className={Styles.problemImage}>
-                                <img src="https://images.unsplash.com/photo-1664382953403-fc1ac77073a0?q=80&w=2344&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                    alt="Funcionarios no estoque" />
-                            </div>
-                        </div>
-
-                        <div className={Styles.sectionHeader}>
-                            <div className={Styles.solucao}>
-                                💡 A solução
-                            </div>
-                            <h2 className={Styles.sectionTitle}>
-                                <span className={Styles.firstSectionGradientText}>Kontroli</span> automatiza seu controle de estoque
-                            </h2>
-                            <p className={Styles.sectionDescription}>
-                                Nossa plataforma automatiza o controle de estoque, cadastra produtos,
-                                registra entradas e saídas, envia alertas automáticos e gera relatórios inteligentes.
-                            </p>
-                        </div>
-
-                        <div className={Styles.solutionGrid}>
-                            <div className={`${Styles.card} ${Styles.solutionCard}`}>
-                                <div className={Styles.cardContent}>
-                                    <div className={`${Styles.cardIcon} ${Styles.solutionIcon} `}>
-                                        <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 className={Styles.cardTitle}>Controle automatizado</h3>
-                                        <p className={Styles.cardText}>Cadastro inteligente de produtos com alertas automáticos</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className={`${Styles.card} ${Styles.solutionCard}`}>
-                                <div className={Styles.cardContent}>
-                                    <div className={`${Styles.cardIcon} ${Styles.solutionIcon}`}>
-                                        <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 className={Styles.cardTitle}>Relatórios inteligentes</h3>
-                                        <p className={Styles.cardText}>Análises detalhadas para tomada de decisão estratégica</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className={`${Styles.card} ${Styles.solutionCard}`}>
-                                <div className={Styles.cardContent}>
-                                    <div className={` ${Styles.cardIcon} ${Styles.solutionIcon}`}>
-                                        <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 className={Styles.cardTitle}>Prevenção de perdas</h3>
-                                        <p className={Styles.cardText}>Alertas de validade e monitoramento em tempo real</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <section className={Styles.problemSection}>
+                <div className={Styles.container}>
+                    <div className={Styles.sectionHeader}>
+                        <h2 className={Styles.sectionTitle}>O desafio das pequenas empresas</h2>
+                        <p className={Styles.sectionDescription}>
+                            Pequenos negócios sofrem com falta de controle de estoque,
+                            perdas inesperadas e retrabalho no dia a dia.
+                        </p>
                     </div>
-                </section>
 
-                <section id="features" className={Styles.featuresSection}>
-                    <div className={Styles.container}>
-                        <div className={Styles.sectionHeader}>
-                            <div className={Styles.funcio}>
-                                ⚡ Funcionalidades
-                            </div>
-                            <h2 className={Styles.sectionTitle}>
-                                Tudo que você precisa para <span className={Styles.firstSectionGradientText}>controlar seu estoque</span>
-                            </h2>
-                            <p className={Styles.sectionDescription}>
-                                Uma plataforma completa com todas as ferramentas necessárias
-                                para otimizar a gestão do seu estoque e aumentar a eficiência do seu negócio.
-                            </p>
-                        </div>
-
-                        <div className={Styles.featuresGrid}>
-                            <div className={Styles.featureCard}>
-                                <div className={Styles.featureContent}>
-                                    <div className={Styles.featureIcon}>
+                    <div className={Styles.problemGrid}>
+                        <div className={Styles.problemCards}>
+                            <div className={`${Styles.card} ${Styles.problemCard}`}>
+                                <div className={Styles.cardContent}>
+                                    <div className={`${Styles.cardIcon} ${Styles.problemIcon}`}>
                                         <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                                                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z">
+                                            </path>
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 className={Styles.featureTitle}>Gestão de Produtos</h3>
-                                        <p>Cadastre e organize seus produtos com códigos, categorias e fornecedores</p>
+                                        <h3 className={Styles.cardTitle}>Produtos em falta</h3>
+                                        <p className={Styles.cardText}>Perdas de vendas por não ter o produto na hora certa</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className={Styles.featureCard}>
-                                <div className={Styles.featureContent}>
-                                    <div className={Styles.featureIcon}>
+                            <div className={`${Styles.card} ${Styles.problemCard}`}>
+                                <div className={Styles.cardContent}>
+                                    <div className={`${Styles.cardIcon} ${Styles.problemIcon}`}>
                                         <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 className={Styles.featureTitle}>Controle de Entradas/Saídas</h3>
-                                        <p>Registre movimentações automáticas e mantenha o estoque sempre atualizado</p>
+                                        <h3 className={Styles.cardTitle}>Desperdício de capital</h3>
+                                        <p className={Styles.cardText}>Estoque parado ou produtos com validade vencida</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className={Styles.featureCard}>
-                                <div className={Styles.featureContent}>
-                                    <div className={Styles.featureIcon}>
+                            <div className={`${Styles.card} ${Styles.problemCard}`}>
+                                <div className={Styles.cardContent}>
+                                    <div className={`${Styles.cardIcon} ${Styles.problemIcon}`}>
                                         <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M15 17h5l-5 5v-5zM9 7H4l5-5v5zM13 12h7l-5 5V7l-5 5z"></path>
+                                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                         </svg>
                                     </div>
                                     <div>
-                                        <h3 className={Styles.featureTitle}>Alertas Inteligentes</h3>
-                                        <p>Receba notificações de estoque baixo, produtos vencendo e mais</p>
+                                        <h3 className={Styles.cardTitle}>Tempo perdido</h3>
+                                        <p className={Styles.cardText}>Horas gastas em controles manuais e planilhas</p>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div className={Styles.featureCard}>
-                                <div className={Styles.featureContent}>
-                                    <div className={Styles.featureIcon}>
-                                        <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 className={Styles.featureTitle}>Relatórios Avançados</h3>
-                                        <p>Analise performance, custos e tome decisões baseadas em dados</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className={Styles.featureCard}>
-                                <div className={Styles.featureContent}>
-                                    <div className={Styles.featureIcon}>
-                                        <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 className={Styles.featureTitle}>Acesso Mobile</h3>
-                                        <p>Gerencie seu estoque de qualquer lugar com nossa app mobile</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className={Styles.featureCard}>
-                                <div className={Styles.featureContent}>
-                                    <div className={Styles.featureIcon}>
-                                        <svg className={Styles.ico} n fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h3 className={Styles.featureTitle}>Multi-usuários</h3>
-                                        <p>Controle de acesso e permissões para sua equipe</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className={Styles.problemImage}>
+                            <img src="https://images.unsplash.com/photo-1664382953403-fc1ac77073a0?q=80&w=2344&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Funcionarios no estoque" />
                         </div>
                     </div>
-                </section>
 
-                <section id="benefits" className={Styles.ctaSection}>
-                    <div className={Styles.container}>
-                        <div className={Styles.sectionHeader}>
-                            <h2 className={Styles.sectionTitle}>
-                                Mais de <span className={Styles.firstSectionGradientText}>1.000+ empresas</span> confiam no Kontroli
-                            </h2>
-                            <p className={Styles.sectionDescription}>
-                                Veja o que nossos clientes estão dizendo sobre a transformação em seus negócios
-                            </p>
+                    <div className={Styles.sectionHeader}>
+                        <div className={Styles.solucao}>
+                            💡 A solução
                         </div>
+                        <h2 className={Styles.sectionTitle}>
+                            <span className={Styles.firstSectionGradientText}>Kontroli</span> automatiza seu controle de estoque
+                        </h2>
+                        <p className={Styles.sectionDescription}>
+                            Nossa plataforma automatiza o controle de estoque, cadastra produtos,
+                            registra entradas e saídas, envia alertas automáticos e gera relatórios inteligentes.
+                        </p>
+                    </div>
 
-                        <div className={Styles.testimonialsGrid}>
-                            <div className={Styles.testimonialCard}>
-                                <div className={Styles.stars}>
-                                    <span className={Styles.star}>★</span>
-                                    <span className={Styles.star}>★</span>
-                                    <span className={Styles.star}>★</span>
-                                    <span className={Styles.star}>★</span>
-                                    <span className={Styles.star}>★</span>
-                                </div>
-                                <div className={Styles.testimonialText}>
-                                    "Desde que começamos a usar o Kontroli, nossas vendas aumentaram 30% e não temos mais
-                                    produtos
-                                    em falta."
-                                </div>
-                                <div className={Styles.testimonialAuthor}>Maria Silva</div>
-                                <div className={Styles.testimonialRole}>Proprietária - Loja do Bairro</div>
-                            </div>
-
-                            <div className={Styles.testimonialCard}>
-                                <div className={Styles.stars}>
-                                    <span className={Styles.star}>★</span>
-                                    <span className={Styles.star}>★</span>
-                                    <span className={Styles.star}>★</span>
-                                    <span className={Styles.star}>★</span>
-                                    <span className={Styles.star}>★</span>
-                                </div>
-                                <div className={Styles.testimonialText}>
-                                    "A automação dos alertas salvou nosso negócio. Nunca mais perdemos produtos por vencimento."
-                                </div>
-                                <div className={Styles.testimonialAuthor}>João Santos</div>
-                                <div className={Styles.testimonialRole}>Gerente - Supermercado Santos</div>
-                            </div>
-
-                            <div className={Styles.testimonialCard}>
-                                <div className={Styles.stars}>
-                                    <span className={Styles.star}>★</span>
-                                    <span className={Styles.star}>★</span>
-                                    <span className={Styles.star}>★</span>
-                                    <span className={Styles.star}>★</span>
-                                    <span className={Styles.star}>★</span>
-                                </div>
-                                <div className={Styles.testimonialText}>
-                                    "Os relatórios são incríveis! Agora temos controle total dos nossos custos e margem de
-                                    lucro."
-                                </div>
-                                <div className={Styles.testimonialAuthor}>Ana Costa</div>
-                                <div className={Styles.testimonialRole}>Sócia - Farmácia Central</div>
-                            </div>
-                        </div>
-
-                        <div className={Styles.ctaCard}>
-                            <h2 className={Styles.ctaTitle}>Pronto para transformar seu negócio?</h2>
-                            <p className={Styles.ctaDescription}>
-                                Junte-se a milhares de empresas que já automatizaram seu controle de estoque
-                                e aumentaram seus lucros com o Kontroli.
-                            </p>
-                            <div className={Styles.ctaButtons}>
-                                <a href="#" className={`${Styles.btn} ${Styles.btnWhite} ${Styles.btnLg}`}>
-                                    Começar teste grátis
+                    <div className={Styles.solutionGrid}>
+                        <div className={`${Styles.card} ${Styles.solutionCard}`}>
+                            <div className={Styles.cardContent}>
+                                <div className={`${Styles.cardIcon} ${Styles.solutionIcon} `}>
                                     <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className={Styles.cardTitle}>Controle automatizado</h3>
+                                    <p className={Styles.cardText}>Cadastro inteligente de produtos com alertas automáticos</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={`${Styles.card} ${Styles.solutionCard}`}>
+                            <div className={Styles.cardContent}>
+                                <div className={`${Styles.cardIcon} ${Styles.solutionIcon}`}>
+                                    <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
                                         </path>
                                     </svg>
-                                </a>
-                                <a href="#" className={`${Styles.btn} ${Styles.btnOutlineWhite} ${Styles.btnLg}`}>
-                                    Falar com consultor
-                                </a>
+                                </div>
+                                <div>
+                                    <h3 className={Styles.cardTitle}>Relatórios inteligentes</h3>
+                                    <p className={Styles.cardText}>Análises detalhadas para tomada de decisão estratégica</p>
+                                </div>
                             </div>
-                            <div className={Styles.ctaFeatures}>
-                                ✨ 30 dias grátis • Sem compromisso • Suporte 24/7
+                        </div>
+
+                        <div className={`${Styles.card} ${Styles.solutionCard}`}>
+                            <div className={Styles.cardContent}>
+                                <div className={` ${Styles.cardIcon} ${Styles.solutionIcon}`}>
+                                    <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className={Styles.cardTitle}>Prevenção de perdas</h3>
+                                    <p className={Styles.cardText}>Alertas de validade e monitoramento em tempo real</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </section>
-         
+                </div>
+            </section>
+
+            <section id="features" className={Styles.featuresSection}>
+                <div className={Styles.container}>
+                    <div className={Styles.sectionHeader}>
+                        <div className={Styles.funcio}>
+                            ⚡ Funcionalidades
+                        </div>
+                        <h2 className={Styles.sectionTitle}>
+                            Tudo que você precisa para <span className={Styles.firstSectionGradientText}>controlar seu estoque</span>
+                        </h2>
+                        <p className={Styles.sectionDescription}>
+                            Uma plataforma completa com todas as ferramentas necessárias
+                            para otimizar a gestão do seu estoque e aumentar a eficiência do seu negócio.
+                        </p>
+                    </div>
+
+                    <div className={Styles.featuresGrid}>
+                        <div className={Styles.featureCard}>
+                            <div className={Styles.featureContent}>
+                                <div className={Styles.featureIcon}>
+                                    <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className={Styles.featureTitle}>Gestão de Produtos</h3>
+                                    <p>Cadastre e organize seus produtos com códigos, categorias e fornecedores</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={Styles.featureCard}>
+                            <div className={Styles.featureContent}>
+                                <div className={Styles.featureIcon}>
+                                    <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className={Styles.featureTitle}>Controle de Entradas/Saídas</h3>
+                                    <p>Registre movimentações automáticas e mantenha o estoque sempre atualizado</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={Styles.featureCard}>
+                            <div className={Styles.featureContent}>
+                                <div className={Styles.featureIcon}>
+                                    <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M15 17h5l-5 5v-5zM9 7H4l5-5v5zM13 12h7l-5 5V7l-5 5z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className={Styles.featureTitle}>Alertas Inteligentes</h3>
+                                    <p>Receba notificações de estoque baixo, produtos vencendo e mais</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={Styles.featureCard}>
+                            <div className={Styles.featureContent}>
+                                <div className={Styles.featureIcon}>
+                                    <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className={Styles.featureTitle}>Relatórios Avançados</h3>
+                                    <p>Analise performance, custos e tome decisões baseadas em dados</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={Styles.featureCard}>
+                            <div className={Styles.featureContent}>
+                                <div className={Styles.featureIcon}>
+                                    <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className={Styles.featureTitle}>Acesso Mobile</h3>
+                                    <p>Gerencie seu estoque de qualquer lugar com nossa app mobile</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className={Styles.featureCard}>
+                            <div className={Styles.featureContent}>
+                                <div className={Styles.featureIcon}>
+                                    <svg className={Styles.ico} n fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className={Styles.featureTitle}>Multi-usuários</h3>
+                                    <p>Controle de acesso e permissões para sua equipe</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="benefits" className={Styles.ctaSection}>
+                <div className={Styles.container}>
+                    <div className={Styles.sectionHeader}>
+                        <h2 className={Styles.sectionTitle}>
+                            Mais de <span className={Styles.firstSectionGradientText}>1.000+ empresas</span> confiam no Kontroli
+                        </h2>
+                        <p className={Styles.sectionDescription}>
+                            Veja o que nossos clientes estão dizendo sobre a transformação em seus negócios
+                        </p>
+                    </div>
+
+                    <div className={Styles.testimonialsGrid}>
+                        <div className={Styles.testimonialCard}>
+                            <div className={Styles.stars}>
+                                <span className={Styles.star}>★</span>
+                                <span className={Styles.star}>★</span>
+                                <span className={Styles.star}>★</span>
+                                <span className={Styles.star}>★</span>
+                                <span className={Styles.star}>★</span>
+                            </div>
+                            <div className={Styles.testimonialText}>
+                                "Desde que começamos a usar o Kontroli, nossas vendas aumentaram 30% e não temos mais
+                                produtos
+                                em falta."
+                            </div>
+                            <div className={Styles.testimonialAuthor}>Maria Silva</div>
+                            <div className={Styles.testimonialRole}>Proprietária - Loja do Bairro</div>
+                        </div>
+
+                        <div className={Styles.testimonialCard}>
+                            <div className={Styles.stars}>
+                                <span className={Styles.star}>★</span>
+                                <span className={Styles.star}>★</span>
+                                <span className={Styles.star}>★</span>
+                                <span className={Styles.star}>★</span>
+                                <span className={Styles.star}>★</span>
+                            </div>
+                            <div className={Styles.testimonialText}>
+                                "A automação dos alertas salvou nosso negócio. Nunca mais perdemos produtos por vencimento."
+                            </div>
+                            <div className={Styles.testimonialAuthor}>João Santos</div>
+                            <div className={Styles.testimonialRole}>Gerente - Supermercado Santos</div>
+                        </div>
+
+                        <div className={Styles.testimonialCard}>
+                            <div className={Styles.stars}>
+                                <span className={Styles.star}>★</span>
+                                <span className={Styles.star}>★</span>
+                                <span className={Styles.star}>★</span>
+                                <span className={Styles.star}>★</span>
+                                <span className={Styles.star}>★</span>
+                            </div>
+                            <div className={Styles.testimonialText}>
+                                "Os relatórios são incríveis! Agora temos controle total dos nossos custos e margem de
+                                lucro."
+                            </div>
+                            <div className={Styles.testimonialAuthor}>Ana Costa</div>
+                            <div className={Styles.testimonialRole}>Sócia - Farmácia Central</div>
+                        </div>
+                    </div>
+
+                    <div className={Styles.ctaCard}>
+                        <h2 className={Styles.ctaTitle}>Pronto para transformar seu negócio?</h2>
+                        <p className={Styles.ctaDescription}>
+                            Junte-se a milhares de empresas que já automatizaram seu controle de estoque
+                            e aumentaram seus lucros com o Kontroli.
+                        </p>
+                        <div className={Styles.ctaButtons}>
+                            <a href="#" className={`${Styles.btn} ${Styles.btnWhite} ${Styles.btnLg}`}>
+                                Começar teste grátis
+                                <svg className={Styles.icon} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a href="#" className={`${Styles.btn} ${Styles.btnOutlineWhite} ${Styles.btnLg}`}>
+                                Falar com consultor
+                            </a>
+                        </div>
+                        <div className={Styles.ctaFeatures}>
+                            ✨ 30 dias grátis • Sem compromisso • Suporte 24/7
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
             <footer id="contact" className={Styles.footer}>
                 <div className={Styles.container}>

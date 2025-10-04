@@ -6,7 +6,42 @@ export default function Relatorio() {
     return (
             <>
 
-<Navbar/>
+  <header className={Styles.header}>
+        <div className={Styles.containerHeader}>
+          <div className={Styles.headerContent}>
+            <div className={Styles.logo}>
+              <a href="/">
+                <img src="/img/logo_caixa.png" alt="" width="60px" />
+              </a>
+              <span className={Styles.logoText}>Kontroli</span>
+            </div>
+            <div className={Styles.headerActions}>
+
+              <div className={Styles.separator}></div>
+              <a href="/"> <button className={` ${Styles.btn} ${Styles.btnGhost}`}>
+                Logout
+                <svg
+                  className={Styles.icon}
+                  fill="none"
+                  stroke="white"
+                  viewBox="0 0 24 24"
+                  width="12"
+                  height="12"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M15 12H3"
+                  />
+                </svg>
+              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
         <main>
             <div className={Styles.container}>
                 <section>
@@ -16,7 +51,7 @@ export default function Relatorio() {
                             <div>
 
                                 <h3>0</h3>
-                                <p>Vendas Hoje</p>
+                                <p>Vendas</p>
                             </div>
                         </div>
 
@@ -55,7 +90,6 @@ export default function Relatorio() {
                     <div className={Styles.vendas}>
 
                         <h2 className={Styles.escrita}> Historico de Vendas</h2>
-                        <button className={Styles.apagar}>x</button>
                     </div>
                     <div className={Styles.historico}>
                         <div className={Styles.nova}>
